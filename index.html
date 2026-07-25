@@ -1,109 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pramit Bhattacharyya – NLP & IR Researcher</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    /* one-file minimalist theme */
-    :root {
-      --bg: #0d1117; --fg: #c9d1d9; --link: #58a6ff; --accent: #2f81f7;
-      --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    *, *::before, *::after {box-sizing: border-box;}
-    body {margin:0;font-family:var(--font);line-height:1.6;background:#fff;color:#222;}
-    header {background:var(--bg);color:var(--fg);padding:4rem 1rem;text-align:center;}
-    h1 {margin:0 0 .5rem;}
-    nav a {color:var(--link);margin:0 .75rem;text-decoration:none;font-weight:500;}
-    main {padding:2rem;max-width:900px;margin:auto;}
-    section {margin-bottom:2.5rem;}
-    h2 {color:var(--accent);margin-top:0.5rem;}
-    ul {padding-left:1.2rem;}
-    footer {text-align:center;padding:2rem 0;font-size:.9rem;color:#666;}
-    a {color:var(--link);}
-    code {background:#f3f3f3;padding:2px 4px;border-radius:4px;}
-    @media (prefers-color-scheme: dark) {
-      body {background:#0d1117;color:#c9d1d9;}
-      code {background:#161b22;}
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pramit Bhattacharyya — NLP &amp; Computational Linguistics</title>
+  <meta name="description" content="Pramit Bhattacharyya — FARE Fellow, Dept. of CSE, IIT Kanpur. Research on NLP and computational linguistics for low-resource languages, particularly Bangla and other Indian languages." />
+
+  <!-- Google Fonts (optional; remove this link to run fully offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2317171b'/%3E%3Ctext x='50' y='68' font-family='Georgia, serif' font-size='46' fill='%23f7f6f2' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Pramit Bhattacharyya</h1>
-    <p>PhD Candidate, IIT Kanpur • NLP & IR for Indic Languages</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#service">Service</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#overview" class="nav__brand">
+        <span class="nav__name">Pramit Bhattacharyya</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#overview" class="nav__link">Overview</a>
+        <a href="#teaching" class="nav__link">Teaching</a>
+        <a href="#publications" class="nav__link">Publications</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#join" class="nav__link">Join</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
-    <!-- ===== ABOUT ===== -->
-    <section id="about">
-      <h2>Research Interests</h2>
-      <p>Information Retrieval, Natural Language Processing for Indic languages, and the Semantic&nbsp;Web.</p>
+
+    <!-- ============ OVERVIEW / HERO ============ -->
+    <section class="section hero" id="overview">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow">FARE Fellow · IIT Kanpur</p>
+          <h1 class="hero__title">
+            Pramit<br /><span class="accent">Bhattacharyya</span>
+          </h1>
+          <p class="hero__lede">
+            My research lies at the intersection of <strong>natural language
+            processing</strong> and <strong>computational linguistics</strong>,
+            with a focus on low-resource languages — particularly
+            <strong>Bangla</strong> and other Indian languages.
+          </p>
+          <p class="hero__body">
+            I work on building datasets, models, benchmarks, and evaluation
+            frameworks grounded in linguistic structure, and am also
+            interested in the use of AI in the healthcare domain. My broader
+            research interests include multilingualism, speech processing,
+            multimodal models, and mechanistic interpretability.
+          </p>
+
+          <details class="bio-bn">
+            <summary>পরিচিতি পড়ুন (Read bio in Bangla)</summary>
+            <p lang="bn">
+              প্রমিত বর্তমানে আইআইটি কানপুরের কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগে
+              একজন FARE ফেলো হিসেবে কর্মরত আছেন। তিনি আইআইটি কানপুরের কম্পিউটার সায়েন্স
+              অ্যান্ড ইঞ্জিনিয়ারিং বিভাগ থেকে অধ্যাপক অর্ণব ভট্টাচার্যের তত্ত্বাবধানে তাঁর পিএইচডি
+              সম্পন্ন করেছেন। তাঁর গবেষণা মূলত ভাষা কার্য-প্রণালী (Natural Language Processing)
+              এবং কম্পিউটেশনাল লিঙ্গুইস্টিক্সের (Computational Linguistics) সংযোগস্থলে, বিশেষ
+              করে কম-সম্পদযুক্ত ভাষা—যেমন বাংলা এবং অন্যান্য ভারতীয় ভাষার ওপর কেন্দ্র করে। তিনি
+              ভাষাগত কাঠামোর ওপর ভিত্তি করে তথ্যসম্ভার, মডেল, মানদণ্ড এবং মূল্যায়ন কাঠামো তৈরির
+              প্রচেষ্টা করেন। এছাড়া, স্বাস্থ্যসেবা খাতে কৃত্রিম বুদ্ধিমত্তার প্রয়োগ নিয়ে গবেষণা করতেও
+              তিনি আগ্রহী। তাঁর গবেষণার কেন্দ্রস্থলে রয়েছে বহুভাষিকতা, ভাষা-প্রণালী, বহুমাত্রিক
+              মডেল এবং কার্যপ্রণালীভিত্তিক ব্যাখ্যাযোগ্যতা।
+            </p>
+          </details>
+
+          <div class="hero__actions">
+            <a href="#publications" class="btn btn--primary">View publications</a>
+            <a href="#join" class="btn btn--ghost">Get in touch</a>
+          </div>
+          <ul class="hero__meta">
+            <li><span>Focus</span> NLP · Computational Linguistics · Bangla &amp; Indic languages</li>
+            <li><span>Base</span> Dept. of CSE, IIT Kanpur</li>
+            <li><span>Advisor</span> Prof. Arnab Bhattacharya</li>
+            <li><span>Email</span> <a href="mailto:pramitb@cse.iitk.ac.in">pramitb@cse.iitk.ac.in</a></li>
+          </ul>
+        </div>
+
+        <aside class="hero__aside reveal">
+          <div class="profile-card">
+            <img class="profile-card__img" src="pramit-da.jpg" alt="Portrait of Pramit Bhattacharyya" />
+            <div class="profile-card__meta">
+              <strong class="profile-card__name">Pramit Bhattacharyya</strong>
+              <span class="profile-card__role muted">FARE Fellow, Dept. of CSE, IIT Kanpur</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__kicker">Education</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline__year">2020 — 2025</span>
+                <span class="timeline__what">PhD, Computer Science</span>
+                <span class="timeline__where">IIT Kanpur</span>
+              </li>
+              <li>
+                <span class="timeline__year">2018 — 2020</span>
+                <span class="timeline__what">M.Tech, Computer Science</span>
+                <span class="timeline__where">IIIT Delhi</span>
+              </li>
+              <li>
+                <span class="timeline__year">2012 — 2016</span>
+                <span class="timeline__what">B.Tech, Computer Science</span>
+                <span class="timeline__where">Heritage Institute of Technology, Kolkata</span>
+              </li>
+              <li>
+                <span class="timeline__year">2012</span>
+                <span class="timeline__what">Class XII, WBCHSE</span>
+                <span class="timeline__where">Nava Nalanda High School</span>
+              </li>
+              <li>
+                <span class="timeline__year">2010</span>
+                <span class="timeline__what">Class X, WBBSE</span>
+                <span class="timeline__where">Nava Nalanda High School</span>
+              </li>
+            </ul>
+
+            <h3 class="card__kicker card__kicker--divider">Experience</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline__year">2026 — Present</span>
+                <span class="timeline__what">FARE Fellow</span>
+                <span class="timeline__where">IIT Kanpur</span>
+              </li>
+              <li>
+                <span class="timeline__year">2016 — 2018</span>
+                <span class="timeline__what">Assistant System Engineer</span>
+                <span class="timeline__where">Tata Consultancy Services, Pune</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- ===== EDUCATION ===== -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Ph.D.</strong> Computer Science – IIT Kanpur, 2020 – Present</li>
-        <li><strong>M.Tech.</strong> Computer Science – IIIT Delhi, 2018 – 2020</li>
-        <li><strong>B.Tech.</strong> Computer Science – Heritage Institute of Technology, Kolkata, 2012 – 2016</li>
-      </ul>
+    <!-- ============ TEACHING ============ -->
+    <section class="section" id="teaching">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">01 — Teaching</p>
+          <h2 class="section__title">Teaching &amp; Mentoring</h2>
+          <p class="section__sub">
+            Courses I have assisted with during my time at IIT Kanpur.
+          </p>
+        </div>
+
+        <div class="grid grid--2 reveal">
+          <div class="tcard">
+            <div class="tcard__badge">TA</div>
+            <div>
+              <h3>CS689 — Computational Linguistics for Indian Languages</h3>
+              <p class="muted">Teaching Assistant · Spring 2024, Fall 2022</p>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__badge">TA</div>
+            <div>
+              <h3>CS315 — Database Systems</h3>
+              <p class="muted">Teaching Assistant · Spring 2023</p>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__badge">Tutor</div>
+            <div>
+              <h3>ESC-101 — Fundamentals of Computing</h3>
+              <p class="muted">Tutor · Summer 2022</p>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__badge">Tutor</div>
+            <div>
+              <h3>ART-402</h3>
+              <p class="muted">Tutor · Summer 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__head section__head--tight reveal">
+          <h3 class="section__title section__title--sm">Professional Service</h3>
+        </div>
+        <div class="grid grid--2 reveal">
+          <div class="tcard">
+            <div class="tcard__badge">PC</div>
+            <div>
+              <h3>Program Committee Member</h3>
+              <p class="muted">NAACL 2024 &amp; ACL 2024</p>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__badge">Chair</div>
+            <div>
+              <h3>Co-Paper Chair</h3>
+              <p class="muted">14th Workshop on Ontology Progress · 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== PUBLICATIONS (truncated to 5 most recent) ===== -->
-    <section id="publications">
-      <h2>Selected Publications&nbsp;(2021-25)</h2>
-      <ol>
-        <li><em>A Case Study of Cross-Lingual Zero-Shot Generalization for Classical Languages in LLMs</em>, Findings of ACL 2025.</li>
-        <li><em>Leveraging LLMs for Bangla Grammar Error Correction: Error Categorization, Synthetic Data, and Model Evaluation</em>, Findings of ACL 2025.</li>
-        <li><em>OntoSeer – A Recommendation System to Improve the Quality of Ontologies</em>, KGSWC 2024.</li>
-        <li><em>Samanvaya: An Interlingua for Unity of Indian Languages</em>, Central Sanskrit University 2024.</li>
-        <li><em>Vacaspati: A Diverse Corpus of Bangla Literature</em>, IJCNLP-AACL 2023.</li>
-      </ol>
-      <p><small>Full list available on <a href="https://github.com/Pramit18142">GitHub</a> or Google&nbsp;Scholar.</small></p>
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section section--alt" id="publications">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">02 — Publications</p>
+          <h2 class="section__title">Publications</h2>
+          <p class="section__sub">
+            Book, journal articles, and conference &amp; workshop papers.
+            Full list on Google Scholar, DBLP, and ACL Anthology.
+          </p>
+        </div>
+
+        <h3 class="publist__group">Book</h3>
+        <ol class="publist reveal">
+          <li class="pub">
+            <div class="pub__venue">Central Sanskrit Univ. · Oct 2024</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Samanvaya: An Interlingua for Unity of Indian Languages</h3>
+              <p class="pub__authors">Chaitali Dangarikar, Arnab Bhattacharya, Karthika N. J., Hrishikesh Terdalkar, <strong>Pramit Bhattacharyya</strong>, Annarao Kulkarni, Chaitanya S. Lakkundi, Ganesh Ramakrishnan, Shivani V.</p>
+              <p class="pub__note">ISBN: 978-93-48435-21-7</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="publist__group">Journal Articles</h3>
+        <ol class="publist reveal">
+          <li class="pub">
+            <div class="pub__venue">IEEE TETC</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Securing an Accelerator-Rich System From Flooding-Based Denial-of-Service Attacks</h3>
+              <p class="pub__authors">Mitali Sinha, <strong>Pramit Bhattacharyya</strong>, Sidhartha Sankar Rout, Neha Bhairavi Prakriya, Sujay Deb</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">ACM TODAES</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Design Space Optimization of Shared Memory Architecture in Accelerator-rich Systems</h3>
+              <p class="pub__authors">Mitali Sinha, Sri Harsha Gade, <strong>Pramit Bhattacharyya</strong>, Sujay Deb</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="publist__group">Conference &amp; Workshops</h3>
+        <ol class="publist reveal">
+          <li class="pub">
+            <div class="pub__venue">IROS · 2026</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Visually-Grounded Reward Synthesis: Training Fast Robot Policies with Slow Foundation Models</h3>
+              <p class="pub__authors">Utsav Singh, <strong>Pramit Bhattacharyya</strong>, Vinay Namboodiri, Amrit Singh Bedi</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">EMNLP · Findings 2025</div>
+            <div class="pub__main">
+              <h3 class="pub__title">BanglaByT5: Byte-Level Modelling for Bangla</h3>
+              <p class="pub__authors"><strong>Pramit Bhattacharyya</strong>, Arnab Bhattacharya</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">ACL · Findings 2025</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Leveraging LLMs for Bangla Grammar Error Correction: Error Categorization, Synthetic Data, and Model Evaluation</h3>
+              <p class="pub__authors"><strong>Pramit Bhattacharyya</strong>, Arnab Bhattacharya</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">ACL · Findings 2025</div>
+            <div class="pub__main">
+              <h3 class="pub__title">A Case Study of Cross-Lingual Zero-Shot Generalisation for Classical Languages in LLMs</h3>
+              <p class="pub__authors">V. S. D. S. Mahesh Akavarapu, Hrishikesh Terdalkar, <strong>Pramit Bhattacharyya</strong>, Shubhangi Agarwal, Vishakha Deulgaonkar, Chaitali Dangarikar, Pralay Manna, Arnab Bhattacharya</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">BHASHA @ IJCNLP-AACL · 2025</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Findings of the IndicGEC and IndicWG Shared Task at BHASHA 2025</h3>
+              <p class="pub__authors"><strong>Pramit Bhattacharyya</strong>, Karthika N J, Hrishikesh Terdalkar, Manoj Balaji Jagadeeshan, Shubham Kumar Nigam, Arvapalli Sai Susmitha, Arnab Bhattacharya</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">KGSWC · 2024</div>
+            <div class="pub__main">
+              <h3 class="pub__title">OntoSeer — A Recommendation System to Improve the Quality of Ontologies</h3>
+              <p class="pub__authors"><strong>Pramit Bhattacharyya</strong>, Samarth Chauhan, Raghava Mutharaju</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">IJCNLP-AACL · 2023</div>
+            <div class="pub__main">
+              <h3 class="pub__title">Vacaspati: A Diverse Corpus of Bangla Literature</h3>
+              <p class="pub__authors"><strong>Pramit Bhattacharyya</strong>, Joydeep Mondal, Subhadip Maji, Arnab Bhattacharya</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">SemEval @ ACL · 2023</div>
+            <div class="pub__main">
+              <h3 class="pub__title">LSJSP at SemEval-2023 Task 2: FTBC — A FastText-based Framework with Pre-trained BERT for NER</h3>
+              <p class="pub__authors">Shilpa Chatterjee, PJ Leo Evenss, <strong>Pramit Bhattacharyya</strong>, Joydeep Mondal</p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">BLP @ EMNLP · 2023</div>
+            <div class="pub__main">
+              <h3 class="pub__title">VacLM at BLP-2023 Task 1: Leveraging BERT Models for Violence Detection in Bangla</h3>
+              <p class="pub__authors">Shilpa Chatterjee, P J Leo Evenss, <strong>Pramit Bhattacharyya</strong></p>
+            </div>
+          </li>
+
+          <li class="pub">
+            <div class="pub__venue">CODS-COMAD · 2021</div>
+            <div class="pub__main">
+              <h3 class="pub__title">OntoSeer: A Tool to Ease Ontology Development</h3>
+              <p class="pub__authors"><strong>Pramit Bhattacharyya</strong>, Raghava Mutharaju</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="section__foot reveal pub__foot">
+          <a href="https://scholar.google.com/citations?user=nOWiHoUAAAAJ" class="btn btn--ghost" target="_blank" rel="noopener">Google Scholar →</a>
+          <a href="https://dblp.org/pid/282/9901.html" class="btn btn--ghost" target="_blank" rel="noopener">DBLP →</a>
+          <a href="https://aclanthology.org/people/pramit-bhattacharyya/" class="btn btn--ghost" target="_blank" rel="noopener">ACL Anthology →</a>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== TEACHING ===== -->
-    <section id="teaching">
-      <h2>Teaching &amp; Mentoring</h2>
-      <p><strong>Teaching Assistant, IIT Kanpur</strong></p>
-      <ul>
-        <li>CS689 Computational Linguistics for Indian Languages (Spring 2024, Fall 2022)</li>
-        <li>CS315 Principles of Database Systems (Spring 2023)</li>
-      </ul>
-      <p><strong>Tutor</strong> — ESC-101 (Summer 2022), ART-402 (Summer 2024)</p>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">03 — Projects</p>
+          <h2 class="section__title">Projects &amp; Resources</h2>
+          <p class="section__sub">
+            Datasets, models, and systems built along the way — mostly
+            centered on Bangla and other Indian languages.
+          </p>
+        </div>
+
+        <div class="grid grid--2 reveal">
+          <article class="pcard">
+            <div class="pcard__tag">Model</div>
+            <h3>BanglaByT5</h3>
+            <p class="muted">Byte-level modelling for Bangla. EMNLP (Findings), 2025.</p>
+            <a href="#" class="pcard__link">Explore →</a>
+          </article>
+          <article class="pcard">
+            <div class="pcard__tag">Resource</div>
+            <h3>Samanvaya</h3>
+            <p class="muted">An interlingua resource for the unity of Indian languages. Central Sanskrit University, 2024.</p>
+            <a href="#" class="pcard__link">Explore →</a>
+          </article>
+          <article class="pcard">
+            <div class="pcard__tag">System</div>
+            <h3>OntoSeer</h3>
+            <p class="muted">A recommendation system that eases ontology development and improves ontology quality. CODS-COMAD 2021 · KGSWC 2024.</p>
+            <a href="#" class="pcard__link">Explore →</a>
+          </article>
+          <article class="pcard">
+            <div class="pcard__tag">Corpus</div>
+            <h3>Vacaspati</h3>
+            <p class="muted">A large, diverse corpus of Bangla literature for training and evaluation. IJCNLP-AACL, 2023.</p>
+            <a href="#" class="pcard__link">Explore →</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== SERVICE / EXPERIENCE ===== -->
-    <section id="service">
-      <h2>Professional Service &amp; Experience</h2>
-      <ul>
-        <li>Program Committee member: NAACL 2024, ACL 2024</li>
-        <li>Co-Paper Chair: 14<sup>th</sup> Workshop on Ontology Progress (WOP) 2023</li>
-        <li>Assistant System Engineer, Tata Consultancy Services (Dec 2016 – Jul 2018)</li>
-      </ul>
+    <!-- ============ JOIN ============ -->
+    <section class="section section--join" id="join">
+      <div class="container">
+        <div class="join reveal">
+          <p class="eyebrow eyebrow--light">04 — Join / Contact</p>
+          <h2 class="join__title">Interested in working together?</h2>
+          <p class="join__sub">
+            Whether you are a student looking to collaborate, or a researcher
+            with a shared interest in NLP for Bangla and other Indian
+            languages, I would love to hear from you.
+          </p>
+          <div class="join__actions">
+            <a href="mailto:pramitb@cse.iitk.ac.in" class="btn btn--light">Email me</a>
+            <a href="https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <ul class="join__socials">
+            <li><a href="https://twitter.com/pramit_10" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://scholar.google.com/citations?user=nOWiHoUAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://dblp.org/pid/282/9901.html" target="_blank" rel="noopener">DBLP</a></li>
+            <li><a href="https://aclanthology.org/people/pramit-bhattacharyya/" target="_blank" rel="noopener">ACL Anthology</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:pramitb@cse.iitk.ac.in"><code>pramitb@cse.iitk.ac.in</code></a></p>
-      <p>GitHub: <a href="https://github.com/Pramit18142">@Pramit18142</a></p>
-      <p>Department of Computer Science &amp; Engineering, IIT Kanpur, India</p>
-    </section>
   </main>
 
-  <footer>&copy; <span id="year"></span> Pramit Bhattacharyya</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div>
+          <strong>Pramit Bhattacharyya</strong>
+          <span class="muted">Dept. of CSE, IIT Kanpur, India</span>
+        </div>
+      </div>
+      <nav class="footer__links">
+        <a href="mailto:pramitb@cse.iitk.ac.in">Email</a>
+        <a href="https://twitter.com/pramit_10" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.linkedin.com/in/pramit-bhattacharyya-9a4060122/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=nOWiHoUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://dblp.org/pid/282/9901.html" target="_blank" rel="noopener">DBLP</a>
+        <a href="https://aclanthology.org/people/pramit-bhattacharyya/" target="_blank" rel="noopener">ACL Anthology</a>
+      </nav>
+      <p class="footer__copy muted">© <span id="year"></span> Pramit Bhattacharyya. Built as a static site.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
-
